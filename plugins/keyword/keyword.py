@@ -37,6 +37,8 @@ class Keyword(Plugin):
             # 加载关键词
             self.keyword = conf["keyword"]
 
+            logger.info("[keyword] config_path: %s" % config_path)
+
             logger.info("[keyword] {}".format(self.keyword))
             self.handlers[Event.ON_HANDLE_CONTEXT] = self.on_handle_context
             logger.info("[keyword] inited.")
