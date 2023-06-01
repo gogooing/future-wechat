@@ -25,7 +25,9 @@ class Banwords(Plugin):
         super().__init__()
         try:
             curdir = os.path.dirname(__file__)
-            logger.info("[Banwords] curdir: %s" % curdir)
+            
+            logger.info(f"[Banwords] curdir 【{curdir}】")
+
             config_path = os.path.join(curdir, "config.json")
             conf = None
             if not os.path.exists(config_path):
@@ -36,7 +38,8 @@ class Banwords(Plugin):
                 with open(config_path, "r") as f:
                     conf = json.load(f)
             
-            logger.info("[Banwords] config_path: %s" % config_path)
+            logger.info(f"[Banwords] config_path 【{config_path}】")
+            
             self.searchr = WordsSearch()
             self.action = conf["action"]
             banwords_path = os.path.join(curdir, "banwords.txt")

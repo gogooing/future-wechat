@@ -45,6 +45,9 @@ class Role(Plugin):
         super().__init__()
         curdir = os.path.dirname(__file__)
         config_path = os.path.join(curdir, "roles.json")
+
+        logger.info(f"[keyword] config_path 【{config_path}】")
+
         try:
             with open(config_path, "r", encoding="utf-8") as f:
                 config = json.load(f)
