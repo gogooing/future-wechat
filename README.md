@@ -16,10 +16,10 @@
 **一键部署:**
 - 个人微信
   
-  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/qApznZ?referralCode=RC3znh)
+  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/c3Aiqi?referralCode=H0mzKM)
 - 企业微信应用号
   
-  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/-FHS--?referralCode=RC3znh)
+  [![Deploy on Railway](https://railway.app/button.svg)](https://railway.app/template/hhNSRT?referralCode=H0mzKM)
 
 # 演示
 
