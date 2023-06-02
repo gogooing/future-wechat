@@ -1,11 +1,11 @@
 version: '2.0'
 services:
-  chatgpt-on-wechat:
+  future-wechat:
     build:
       context: ./
       dockerfile: Dockerfile.alpine
-    image: zhayujie/chatgpt-on-wechat-voice-reply
-    container_name: chatgpt-on-wechat-voice-reply
+    image: gogooing/future-wechat-voice-reply
+    container_name: future-wechat-voice-reply
     environment:
       OPEN_AI_API_KEY: 'YOUR API KEY'
       OPEN_AI_PROXY: ''

@@ -2,7 +2,7 @@ IMG:=`cat Name`
 MOUNT:=
 PORT_MAP:=
 DOTENV:=.env
-CONTAINER_NAME:=sample-chatgpt-on-wechat
+CONTAINER_NAME:=sample-future-wechat
 
 echo:
 	echo $(IMG)
