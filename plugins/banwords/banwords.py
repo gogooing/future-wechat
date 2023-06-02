@@ -17,7 +17,7 @@ from .lib.WordsSearch import WordsSearch
     desire_priority=100,
     hidden=True,
     desc="判断消息中是否有敏感词、决定是否回复。",
-    version="1.1",
+    version="1.2",
     author="lanvent",
 )
 class Banwords(Plugin):
@@ -25,9 +25,7 @@ class Banwords(Plugin):
         super().__init__()
         try:
             curdir = os.path.dirname(__file__)
-            
-            logger.info(f"[Banwords] curdir 【{curdir}】")
-
+            logger.warn(f"[Banwords] curdir 【{curdir}】")
             config_path = os.path.join(curdir, "config.json")
             conf = None
             if not os.path.exists(config_path):
@@ -37,9 +35,8 @@ class Banwords(Plugin):
             else:
                 with open(config_path, "r") as f:
                     conf = json.load(f)
-            
-            logger.info(f"[Banwords] config_path 【{config_path}】")
-            
+        
+            logger.warn(f"[Banwords] config_path 【{config_path}】")
             self.searchr = WordsSearch()
             self.action = conf["action"]
             banwords_path = os.path.join(curdir, "banwords.txt")
