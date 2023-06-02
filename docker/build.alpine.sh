@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # fetch latest release tag
-CHATGPT_ON_WECHAT_TAG=`curl -sL "https://api.github.com/repos/zhayujie/chatgpt-on-wechat/releases/latest" | \
+CHATGPT_ON_WECHAT_TAG=`curl -sL "https://api.github.com/repos/gogooing/future-wechat/releases/latest" | \
      grep '"tag_name":' | \
      sed -E 's/.*"([^"]+)".*/\1/'`
 
